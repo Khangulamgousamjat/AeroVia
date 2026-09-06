@@ -30,7 +30,7 @@ export default function OfflinePage() {
               Connection Lost
             </h2>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
-              FlyGo is currently offline. Check your internet connection or try refreshing the page.
+              AeroVia is currently offline. Check your internet connection or try refreshing the page.
             </p>
           </div>
           

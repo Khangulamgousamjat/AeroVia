@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "FlyGo Airlines",
-    short_name: "FlyGo",
-    description: "Premium real-time flight search and interactive seat booking app.",
+    name: "AeroVia Airlines",
+    short_name: "AeroVia",
+    description: "AeroVia - Premium real-time flight search and interactive seat booking app.",
     start_url: "/",
     display: "standalone",
     background_color: "#09090b",

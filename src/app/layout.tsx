@@ -8,19 +8,19 @@ import { Toaster } from "@/components/ui/sonner";
 import { PWAInstallToast } from "@/components/pwa-install-toast";
 
 export const metadata: Metadata = {
-  title: "FlyGo Airlines - Premium Flight Booking",
+  title: "AeroVia - Premium Flight Booking",
   description:
-    "Experience premium air travel with FlyGo. Search flights, select visual seat maps, and manage your luxury travel itineraries seamlessly.",
+    "Experience premium air travel with AeroVia. Search flights, select visual seat maps, and manage your luxury travel itineraries seamlessly.",
   icons: {
     icon: "/logo.png",
   },
   authors: [
     {
-      name: "Aarab",
-      url: "https://aarab.vercel.app",
+      name: "Gous Khan",
+      url: "https://github.com/Khangulamgousamjat",
     },
   ],
-  creator: "Aarab",
+  creator: "Gous Khan",
 };
 
 export default function RootLayout({
@@ -38,10 +38,10 @@ export default function RootLayout({
             <p>
               © {new Date().getFullYear()}{" "}
               <Link
-                href={"https://aarab.vercel.app"}
+                href={"https://github.com/Khangulamgousamjat"}
                 className="hover:underline"
               >
-                Aarab
+                Gous Khan
               </Link>
               . All rights reserved.
             </p>

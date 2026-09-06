@@ -4,12 +4,12 @@ import * as React from "react";
 import Image from "next/image";
 
 const HERO_IMAGES = [
-  "/FlyGo/1.webp",
-  "/FlyGo/2.webp",
-  "/FlyGo/3.webp",
-  "/FlyGo/4.webp",
-  "/FlyGo/5.webp",
-  "/FlyGo/6.webp",
+  "/AeroVia/1.webp",
+  "/AeroVia/2.webp",
+  "/AeroVia/3.webp",
+  "/AeroVia/4.webp",
+  "/AeroVia/5.webp",
+  "/AeroVia/6.webp",
 ];
 
 export function HeroSection() {
@@ -34,7 +34,7 @@ export function HeroSection() {
         >
           <Image
             src={HERO_IMAGES[0]}
-            alt="FlyGo Travel Landscape 1"
+            alt="AeroVia Travel Landscape 1"
             fill
             priority
             sizes="100vw"
@@ -54,7 +54,7 @@ export function HeroSection() {
               >
                 <Image
                   src={src}
-                  alt={`FlyGo Travel Landscape ${actualIdx + 1}`}
+                  alt={`AeroVia Travel Landscape ${actualIdx + 1}`}
                   fill
                   sizes="100vw"
                   className="object-cover blur-[3px] scale-105"
@@ -70,10 +70,10 @@ export function HeroSection() {
       <div className="container mx-auto px-4 md:px-6 relative z-20 text-center max-w-xl">
         <div className="space-y-3">
           <h1 className="text-8xl md:text-10xl font-black tracking-widest font-heading uppercase text-white drop-shadow-sm select-none">
-            FlyGo
+            AeroVia
           </h1>
           <p className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-primary bg-linear-to-r from-primary via-purple-400 to-indigo-400 bg-clip-text select-none">
-            Tap. Fly. Go
+            Elevate Your Journey
           </p>
         </div>
       </div>

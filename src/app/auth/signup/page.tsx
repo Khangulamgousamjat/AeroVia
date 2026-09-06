@@ -99,7 +99,7 @@ function SignupForm() {
             <RiPlaneLine className="h-6 w-6 transform rotate-45 animate-pulse" />
           </div>
           <h1 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 font-heading">
-            FlyGo Airlines
+            AeroVia Airlines
           </h1>
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
             Create an account to access premium travel benefits and visual seat selection.
@@ -165,7 +165,7 @@ function SignupForm() {
                         <div className="relative">
                           <RiMailLine className="absolute left-3 top-3 h-4 w-4 text-zinc-400" />
                           <Input
-                            placeholder="traveler@flygo.com"
+                            placeholder="traveler@aerovia.com"
                             className="pl-9 h-10"
                             type="email"
                             disabled={isLoading}

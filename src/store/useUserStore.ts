@@ -117,7 +117,7 @@ export const useUserStore = create<UserStoreState & UserStoreActions>()(
       clearSession: () => set({ user: null, cachedBookings: [] }),
     }),
     {
-      name: "flygo-user-storage",
+      name: "aerovia-user-storage",
       partialize: (state) => ({
         // Only persist state fields — never spread ...state (which includes actions)
         user: state.user,

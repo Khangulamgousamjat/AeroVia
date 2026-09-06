@@ -147,7 +147,7 @@ export const useFlightStore = create<FlightStoreState & FlightStoreActions>()(
         }),
     }),
     {
-      name: "flygo-flight-storage",
+      name: "aerovia-flight-storage",
       partialize: (state) => ({
         searchState: state.searchState,
         selectedFlight: state.selectedFlight,

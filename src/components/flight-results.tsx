@@ -484,7 +484,9 @@ export function FlightResults({
                             // Direct check from localStorage to avoid any race condition before store hydration finishes
                             let isLoggedOut = false;
                             if (typeof window !== "undefined") {
-                              const stored = localStorage.getItem("flygo-user-storage");
+                              const stored =
+                                localStorage.getItem("aerovia-user-storage") ||
+                                localStorage.getItem("flygo-user-storage");
                               if (stored) {
                                 try {
                                   const parsed = JSON.parse(stored);

@@ -80,12 +80,12 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2.5 font-bold text-xl text-primary font-heading tracking-tight">
           <Image
             src="/logo.png"
-            alt="FlyGo Logo"
+            alt="AeroVia Logo"
             width={36}
             height={36}
             className="object-contain h-9 w-9"
           />
-          <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">FlyGo</span>
+          <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">AeroVia</span>
         </Link>
 
         {/* Desktop Nav Links */}

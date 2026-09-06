@@ -367,7 +367,7 @@ export function SearchPanel({ className }: SearchPanelProps = {}) {
               className="px-6 font-semibold shadow-lg shadow-primary/25 cursor-pointer"
             >
               <RiSearchLine className="mr-2 h-4 w-4" />
-              Search FlyGo Flights
+              Search AeroVia Flights
             </Button>
           </div>
         </form>

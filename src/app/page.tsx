@@ -30,7 +30,7 @@ interface FlightListing {
 }
 
 export default async function HomePage() {
-  preload("/FlyGo/1.webp", { as: "image", fetchPriority: "high" });
+  preload("/AeroVia/1.webp", { as: "image", fetchPriority: "high" });
 
   let flights: FlightListing[] = [];
   let errorMsg: string | null = null;

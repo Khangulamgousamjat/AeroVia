@@ -1,19 +1,17 @@
-# Fly Go
+# AeroVia
 
 A real-time flight booking app where users can search flights, pick seats from an interactive map, and manage bookings (including rescheduling and cancellations). It's built as an installable PWA that works offline.
 
 ---
 
-![Fly Go logo](https://raw.githubusercontent.com/aarabii/flight-app/refs/heads/master/screenshots/desktop_screen_ss.png)
+![AeroVia logo](./screenshots/desktop_screen_ss.png)
 
 ---
 
-| Info             | Details                                       |
-| :--------------- | :-------------------------------------------- |
-| Live Demo        | [Vercel](https://flight-app-self.vercel.app/) |
-| Created by       | [Aarab Nishchal](https://aarab.vercel.app/)   |
-| Creator's GitHub | [aarabii](https://github.com/aarabii)         |
-| Contact Creator  | [Gmail](mailto:aarab.nishchal@gmail.com)      |
+| Info              | Details                                                        |
+| :---------------- | :------------------------------------------------------------- |
+| Owner / Creator   | [Gous Khan](https://github.com/Khangulamgousamjat)             |
+| GitHub Repository | [Khangulamgousamjat/AeroVia](https://github.com/Khangulamgousamjat/AeroVia) |
 
 ---
 
@@ -62,7 +60,7 @@ The backend runs on Supabase with five primary tables:
 
 ### ER diagram
 
-![Database Table Diagram](https://raw.githubusercontent.com/aarabii/flight-app/10018fb1cf21abf074724e7f3a92c6591d1fd960/screenshots/database_table.svg)
+![Database Table Diagram](./screenshots/database_table.svg)
 
 ---
 
@@ -138,7 +136,7 @@ Manages the active search query, selected flight/seats, passenger details, and t
 
 #### Middleware and security
 
-- **Persistence:** Saved under the `flygo-flight-storage` key in browser storage.
+- **Persistence:** Saved under the `aerovia-flight-storage` key in browser storage.
 - **Privacy filter:** The `partialize` setting strips out `passportNo` from passenger profiles before writing to disk.
 
 ---
@@ -164,7 +162,7 @@ Tracks user logins and caches booking history to support offline access.
 
 #### Middleware and security
 
-- **Persistence:** Saved under the `flygo-user-storage` key.
+- **Persistence:** Saved under the `aerovia-user-storage` key.
 - **Privacy filter:** The `partialize` configuration recursively strips all `passport_no` and `passportNo` fields from cached passenger objects prior to browser serialization.
 
 ---
@@ -199,8 +197,8 @@ Set up the project locally:
 1. Clone the repository and install dependencies:
 
    ```bash
-   git clone https://github.com/aarabii/flight-app
-   cd flight-app
+   git clone https://github.com/Khangulamgousamjat/AeroVia.git
+   cd AeroVia
    npm install
    ```
 
@@ -379,7 +377,7 @@ Here is a quick look at the interface, setup prompts, and database security rule
         <img src="./screenshots/opened_as_app.png" width="100%" alt="Standalone App Mode" />
       </a>
       <br />
-      <sub><em>Fly Go in standalone desktop window.</em></sub>
+      <sub><em>AeroVia in standalone desktop window.</em></sub>
     </td>
   </tr>
 </table>

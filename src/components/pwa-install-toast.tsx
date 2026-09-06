@@ -19,7 +19,7 @@ export function PWAInstallToast() {
 
     window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
 
-    const toastId = toast("Install FlyGo Airlines", {
+    const toastId = toast("Install AeroVia Airlines", {
       description:
         "Get the best experience by installing our premium app on your device.",
       duration: 30000,
