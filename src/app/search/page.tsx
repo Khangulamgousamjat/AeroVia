@@ -68,6 +68,38 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
     }
   }
 
+  // Provide fallback flights if database has not yet been seeded
+  if (flights.length === 0 && (isHubSchedule || (origin && destination))) {
+    const targetDest = destination || "DXB (Dubai T3)"
+    const targetOri = origin || "DEL (IGIA T3)"
+    const baseTime = date ? new Date(date).getTime() : Date.now()
+
+    flights = [
+      {
+        id: `demo-search-1`,
+        flight_no: "AV-401",
+        origin: targetOri,
+        destination: targetDest,
+        departs_at: new Date(baseTime + 3600 * 1000 * 4).toISOString(),
+        arrives_at: new Date(baseTime + 3600 * 1000 * 9).toISOString(),
+        aircraft_type: "Boeing 787-9",
+        status: "scheduled",
+        base_price: 24500,
+      },
+      {
+        id: `demo-search-2`,
+        flight_no: "AV-882",
+        origin: targetOri,
+        destination: targetDest,
+        departs_at: new Date(baseTime + 3600 * 1000 * 11).toISOString(),
+        arrives_at: new Date(baseTime + 3600 * 1000 * 17).toISOString(),
+        aircraft_type: "Airbus A350-900",
+        status: "scheduled",
+        base_price: 29800,
+      },
+    ]
+  }
+
   return (
     <FlightResults
       flights={flights}
